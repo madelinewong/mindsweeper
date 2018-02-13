@@ -6,6 +6,86 @@ class App extends Component {
     super();
     this.state = {
       squares: [
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },  
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },  
+        {
+          isHidden: true,
+          hasBomb:  false, 
+        },
       {
         isHidden: true,
         hasBomb:  false, 
@@ -42,6 +122,10 @@ class App extends Component {
         isHidden: true,
         hasBomb:  false, 
       },  
+      {
+        isHidden: true,
+        hasBomb:  false, 
+      },
       ]
     }
   this.handleBomb = this.handleBomb.bind(this);
