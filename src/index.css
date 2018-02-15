@@ -9,4 +9,5 @@ body {
   width: 20px;
   border: solid black 1px;
   margin-left: 250px;
+  border: inline;
 }
