@@ -1,13 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background-color: rgb(238, 188, 168);
+}
+
+h1 {
+  font-family: sans-serif; 
+  color: black;
+  margin-left: 440px;
 }
 
 .squares {
+  flex: 0%;
   height: 20px; 
   width: 20px;
   border: solid black 1px;
-  margin-left: 250px;
+  margin-left: 2px;
+  padding-left: 300px;
   border: inline;
 }
