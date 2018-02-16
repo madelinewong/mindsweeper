@@ -32,7 +32,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -48,7 +48,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -64,7 +64,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -100,7 +100,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -164,7 +164,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -260,7 +260,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -312,7 +312,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -352,7 +352,7 @@ class App extends Component {
         },
         {
           isHidden: true,
-          hasBomb: false
+          hasBomb: true
         },
         {
           isHidden: true,
@@ -372,14 +372,13 @@ class App extends Component {
   }
 
   handleBomb(position) {
-    console.log("hleleleo");
 
     const clickedSquare = this.state.squares[position];
     //does it have a bomb?
     //if so YOU LOSE!
     //otherwise continue on
     if (clickedSquare.hasBomb){
-      alert('you lose!');
+      alert('you lose!💣 ');
       return //empty return means STOP!
     }
 
@@ -404,7 +403,7 @@ class App extends Component {
       return (
         <div
           key={index}
-          style={{ backgroundColor: square.isHidden ? "" : "red" }}
+          style={{ backgroundColor: square.isHidden ? "" : "#9b69ad"  }}
           onClick={() => this.handleBomb(index)}
           className="squares"
         />
