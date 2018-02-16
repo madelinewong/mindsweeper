@@ -369,6 +369,7 @@ class App extends Component {
       ]
     };
     this.handleBomb = this.handleBomb.bind(this);
+    this.handleRightClick = this.handleRightClick.bind(this);
   }
 
   handleBomb(position) {
@@ -381,6 +382,11 @@ class App extends Component {
       alert('you lose!💣 ');
       return //empty return means STOP!
     }
+
+    const rightClickedSquare = this.state.squares[position]; 
+    if (rightClickedSquare.rightClick(console.log(pls)){
+    }
+    
 
     const first = this.state.squares.slice(0, position);
 
@@ -408,6 +414,15 @@ class App extends Component {
           className="squares"
         />
       );
+    const { squares } = squares.map((square, index) =>{
+      return (
+        <div key = { index }
+        style={{ backgroundColor: square.isHidden ? "" : "🚩"}}
+        onRightClick={() => this.handleRightClick(index)}
+        className="squares" 
+        /> 
+      )
+    })
     });
     return (
       <div className="container">
@@ -417,75 +432,4 @@ class App extends Component {
     );
   }
 }
-//   const generatePlayerBoard = (numberOfRows) => {
-//     let board = [];
-//     for (let i = 0; i < numberOfRows; i++){
-//       let row = [];
-//     }
-//     board.push(row);
-//   }
-//   return board;
-
-//   const generateBombBoard = (numberOfRows, numberOfBombs) => {
-//     let board = [];
-//     for (let i = 0; 1 < numberOfRows; i++){
-//       let board = [];
-//     }
-//     board.push(row)
-//   }
-
-//   let numberOfBombsPlaced = 0;
-//   while (numberOfBombsPlaced < numberOfBombs){
-//     let randomRowIndex = Math.floor(Math.random() *numberOfRows);
-//     if (board[randomRowIndex] !== 'B'){
-//       board[randomRowIndex] = 'B';
-//       numberOfBombsPlaced +=1;
-//     }
-
-//   }
-//   return board;
-
-//   const getNumberofNeighborBombs = (bombBoard, rowIndex) => {
-//     const neighborOffsets = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]];
-//     const numberOfRows = bombBoard.length;
-//     let numberOfBombs = 0;
-//     neighborOffsets.forEach(offset => {
-//       const neighborRowIndex = rowIndex + offset[0];
-//       if (neighborRowIndex >= 0 && neighborRowIndex <= numberOfRows){
-//         if(bombBoard[neighborRowIndex] === 'B'){
-//           numberOfBombs +=1;
-//         }
-//       }
-//     });
-//     return numberOfBombs;
-//   }
-
-//   const flipTile = (playerBoard, bombBoard, rowIndex) => {
-//     if(playerBoard[rowIndex] !== ' '){
-//       console.log('This tile is already flipped!!');
-//       return;
-//     } else if (bombBoard[rowIndex] === 'B'){
-//       playerBoard[rowIndex] = 'B';
-//     } else {
-//       playerBoard[rowIndex] = getNumberofNeighborBombs(bombBoard, rowIndex);
-//     }
-//   };
-
-//   const printBoard = board => {
-//     console.log(board.map(row => row.join(' | ')).join('\n'));
-//   }
-
-//   let playerBoard = generatePlayerBoard(10, 10);
-//   let bombBoard = generateBombBoard(10, 10, 5);
-
-//   console.log('Player Board: ');
-//   printBoard(playerBoard);
-//   console.log('Bomb Board: ');
-//   printBoard(bombBoard);
-
-//   flipTile(playerBoard, bombBoard, 0, 0);
-//   console.log('Updated Player Board: ');
-//   printBoard(playerBoard);
-// }
-// }
 export default App;
