@@ -1,444 +1,445 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       squares: [
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: true
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
+          hasBomb: false
         },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },  
+          hasBomb: false
+        },
         {
           isHidden: true,
-          hasBomb:  false, 
-        },
+          hasBomb: false
+        }
       ]
-    }
+    };
     this.handleBomb = this.handleBomb.bind(this);
   }
-  
-handleBomb(position){
 
-    const clickedSquare = this.state.squares[position]; 
-        
-    const first = this.state.squares.slice(0, position); 
-        
+  handleBomb(position) {
+    console.log("hleleleo");
+
+    const clickedSquare = this.state.squares[position];
+    //does it have a bomb?
+    //if so YOU LOSE!
+    //otherwise continue on
+    if (clickedSquare.hasBomb){
+      alert('you lose!');
+      return //empty return means STOP!
+    }
+
+    const first = this.state.squares.slice(0, position);
+
     const last = this.state.squares.slice(position + 1);
-        
+
     const newSquares = [
-          ...first, 
-        
-    {...clickedSquare, handleBomb: !clickedSquare.handleBomb}, 
-        
-    ...last
-        ];
-    this.setState({'squares': newSquares});
-}
- 
+      ...first,
 
-render() {
-    
-  const { squares } = this.state; 
-      
-  const SquareGrid = squares.map((squares, index) => {
-   return (<div key={index}
+      { ...clickedSquare, isHidden: !clickedSquare.isHidden },
 
-                                                    
-            ishidden={squares.isHidden}
-                                                              
-            hasbomb={squares.hasBomb}  
-                                                          
-            onClick={()=> this.handleBomb(index)}
-            className= "squares"/>)
-          //   return ( 
-          //     <div className= 'container'>
-          //   <h1>Mindsweeper™</h1>
-          //     <div className='row'>
-          //       { SquareGrid }
-          //     </div>
-          // </div>)
+      ...last
+    ];
+    this.setState({ squares: newSquares });
+  }
+
+  render() {
+    const { squares } = this.state;
+
+    const SquareGrid = squares.map((square, index) => {
+      return (
+        <div
+          key={index}
+          style={{ backgroundColor: square.isHidden ? "" : "red" }}
+          onClick={() => this.handleBomb(index)}
+          className="squares"
+        />
+      );
     });
-    return <div>
-      {SquareGrid}
-    </div>
+    return (
+      <div className="container">
+        <h1>Mindsweeper™</h1>
+        <div className="row">{SquareGrid}</div>
+      </div>
+    );
   }
 }
 //   const generatePlayerBoard = (numberOfRows) => {
-//     let board = []; 
+//     let board = [];
 //     for (let i = 0; i < numberOfRows; i++){
-//       let row = []; 
+//       let row = [];
 //     }
 //     board.push(row);
 //   }
-//   return board; 
-  
+//   return board;
+
 //   const generateBombBoard = (numberOfRows, numberOfBombs) => {
-//     let board = []; 
+//     let board = [];
 //     for (let i = 0; 1 < numberOfRows; i++){
-//       let board = []; 
+//       let board = [];
 //     }
 //     board.push(row)
 //   }
 
-//   let numberOfBombsPlaced = 0; 
+//   let numberOfBombsPlaced = 0;
 //   while (numberOfBombsPlaced < numberOfBombs){
 //     let randomRowIndex = Math.floor(Math.random() *numberOfRows);
 //     if (board[randomRowIndex] !== 'B'){
-//       board[randomRowIndex] = 'B'; 
+//       board[randomRowIndex] = 'B';
 //       numberOfBombsPlaced +=1;
 //     }
 
@@ -446,11 +447,11 @@ render() {
 //   return board;
 
 //   const getNumberofNeighborBombs = (bombBoard, rowIndex) => {
-//     const neighborOffsets = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]; 
-//     const numberOfRows = bombBoard.length; 
-//     let numberOfBombs = 0; 
+//     const neighborOffsets = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]];
+//     const numberOfRows = bombBoard.length;
+//     let numberOfBombs = 0;
 //     neighborOffsets.forEach(offset => {
-//       const neighborRowIndex = rowIndex + offset[0]; 
+//       const neighborRowIndex = rowIndex + offset[0];
 //       if (neighborRowIndex >= 0 && neighborRowIndex <= numberOfRows){
 //         if(bombBoard[neighborRowIndex] === 'B'){
 //           numberOfBombs +=1;
@@ -459,13 +460,13 @@ render() {
 //     });
 //     return numberOfBombs;
 //   }
-  
+
 //   const flipTile = (playerBoard, bombBoard, rowIndex) => {
 //     if(playerBoard[rowIndex] !== ' '){
-//       console.log('This tile is already flipped!!'); 
-//       return; 
+//       console.log('This tile is already flipped!!');
+//       return;
 //     } else if (bombBoard[rowIndex] === 'B'){
-//       playerBoard[rowIndex] = 'B'; 
+//       playerBoard[rowIndex] = 'B';
 //     } else {
 //       playerBoard[rowIndex] = getNumberofNeighborBombs(bombBoard, rowIndex);
 //     }
@@ -475,17 +476,17 @@ render() {
 //     console.log(board.map(row => row.join(' | ')).join('\n'));
 //   }
 
-//   let playerBoard = generatePlayerBoard(10, 10); 
-//   let bombBoard = generateBombBoard(10, 10, 5); 
+//   let playerBoard = generatePlayerBoard(10, 10);
+//   let bombBoard = generateBombBoard(10, 10, 5);
 
 //   console.log('Player Board: ');
 //   printBoard(playerBoard);
 //   console.log('Bomb Board: ');
-//   printBoard(bombBoard); 
+//   printBoard(bombBoard);
 
-//   flipTile(playerBoard, bombBoard, 0, 0); 
-//   console.log('Updated Player Board: '); 
-//   printBoard(playerBoard); 
+//   flipTile(playerBoard, bombBoard, 0, 0);
+//   console.log('Updated Player Board: ');
+//   printBoard(playerBoard);
 // }
 // }
 export default App;
