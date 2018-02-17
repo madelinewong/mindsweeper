@@ -11,15 +11,15 @@ class App extends Component {
           hasBomb: true
         },
         {
-          isHidden: false,
+          isHidden: true,
           hasBomb: false
         },
         {
-          isHidden: false,
+          isHidden: true,
           hasBomb: false
         },
         {
-          isHidden: false,
+          isHidden: true,
           hasBomb: false
         },
         {
@@ -385,6 +385,9 @@ class App extends Component {
     const first = this.state.squares.slice(0, position);
     // find the last element of first
     // if that element does not have a bomb then change isHidden to false
+    if(!first[first.length-1].hasBomb){
+      first[first.length-1].isHidden = false;
+    }
     
 
     const last = this.state.squares.slice(position + 1);
