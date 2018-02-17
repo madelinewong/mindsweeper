@@ -1,20 +1,21 @@
 body {
   margin: 0;
   padding-left: 0;
-  background-color: #df87aa;
+ background-color: rgb(188, 215, 241);
 }
 
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:#3b2744;
-  margin-left: 440px;
+  font-size: 50px;
+  color: rgb(148, 96, 126);
+  margin-left: 410px;
 }
 
 .squares {
   flex: 0%;
   height: 20px; 
   width: 30px;
-  border: 3px inset #784e8b;
+  border: 3px inset rgb(236, 181, 218);
   margin-left: 2px;
   padding-left: 300px;
 }
