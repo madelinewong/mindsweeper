@@ -11,15 +11,15 @@ class App extends Component {
           hasBomb: true
         },
         {
-          isHidden: true,
+          isHidden: false,
           hasBomb: false
         },
         {
-          isHidden: true,
+          isHidden: false,
           hasBomb: false
         },
         {
-          isHidden: true,
+          isHidden: false,
           hasBomb: false
         },
         {
@@ -369,29 +369,30 @@ class App extends Component {
       ]
     };
     this.handleBomb = this.handleBomb.bind(this);
-    this.handleRightClick = this.handleRightClick.bind(this);
+    // this.handleRightClick = this.handleRightClick.bind(this);
   }
 
   handleBomb(position) {
-
     const clickedSquare = this.state.squares[position];
     //does it have a bomb?
     //if so YOU LOSE!
     //otherwise continue on
-    if (clickedSquare.hasBomb){
-      alert('you lose!💣 ');
-      return //empty return means STOP!
+    if (clickedSquare.hasBomb) {
+      alert("you lose!💣 ");
+      return; //empty return means STOP!
     }
-
-    const rightClickedSquare = this.state.squares[position]; 
-    if (rightClickedSquare.rightClick(console.log(pls)){
-    }
-    
 
     const first = this.state.squares.slice(0, position);
+    // find the last element of first
+    // if that element does not have a bomb then change isHidden to false
+    
 
     const last = this.state.squares.slice(position + 1);
-
+    //find the first element of last
+    // if that that elment does not have a bomb then change isHidden to false
+    if(!last[0].hasBomb){
+     last[0].isHidden = false;
+    }
     const newSquares = [
       ...first,
 
@@ -409,20 +410,11 @@ class App extends Component {
       return (
         <div
           key={index}
-          style={{ backgroundColor: square.isHidden ? "" : "#9b69ad"  }}
+          style={{ backgroundColor: square.isHidden ? "" : "#9b69ad" }}
           onClick={() => this.handleBomb(index)}
           className="squares"
         />
       );
-    const { squares } = squares.map((square, index) =>{
-      return (
-        <div key = { index }
-        style={{ backgroundColor: square.isHidden ? "" : "🚩"}}
-        onRightClick={() => this.handleRightClick(index)}
-        className="squares" 
-        /> 
-      )
-    })
     });
     return (
       <div className="container">
